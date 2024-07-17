@@ -1,0 +1,17 @@
+<header>
+    <div class="pageContent">
+        <a href="/">
+            <img class="logo"
+                src="https://camo.githubusercontent.com/18b8aadb05005d96e33302e18ae0424b7daa3fc2498b9317ca98436011eff94d/68747470733a2f2f7374617469632e7769787374617469632e636f6d2f6d656469612f3732666665365f64613864323134326434396334326232396339366261383063386139316136637e6d76322e706e67"
+                alt="<%= locals.logo.alt %>">
+        </a>
+        <nav>
+            <ul>   
+                <% locals.nav.forEach(element => { %>
+                    <li><a href="<%= element.href %>"><%= element.label %></a></li>
+                <% }) %>
+                <li id="authBtn"><%= auth.label %></li>
+            </ul>
+        </nav>
+    </div>
+</header>
